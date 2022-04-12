@@ -28,13 +28,17 @@ struct ContentView: View {
                         }
                     }
                 }
-                HStack{
-                    TextField("The value is: ", value:$inputValue, format: .number)
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.decimalPad)
-                    TextField("The output is: ", value:$outputValue, format: .number)
-                        .multilineTextAlignment(.center)
-                        .disabled(true)
+                Section{
+                    HStack{
+                        TextField("The value is: ", value:$inputValue, format: .number)
+                            .multilineTextAlignment(.center)
+                            .keyboardType(.decimalPad)
+                        TextField("The output is: ", value:$outputValue, format: .number)
+                            .multilineTextAlignment(.center)
+                            .disabled(true)
+                    }
+                } header: {
+                    Text("Insert your value here")
                 }
                 
                 Section{
@@ -53,7 +57,7 @@ struct ContentView: View {
                                 Text($0)
                             }
                         default:
-                            ForEach( lengthUnits, id: \.self){
+                            ForEach(lengthUnits, id: \.self){
                                 Text($0)
                             }
                         }
@@ -75,7 +79,7 @@ struct ContentView: View {
                                 Text($0)
                             }
                         default:
-                            ForEach( lengthUnits, id: \.self){
+                            ForEach(lengthUnits, id: \.self){
                                 Text($0)
                             }
                         }
@@ -85,10 +89,21 @@ struct ContentView: View {
             .navigationTitle("Converter")
         }
         .onChange(of: self.inputValue) { newValue in
-            outputValue = lengthConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+            switch unitSelected {
+            case "Temperature":
+                outputValue = temperatureConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+                break
+            case "Time":
+                outputValue = timeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+                break
+            case "Volume":
+                outputValue = volumeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+                break
+            default:
+                outputValue = lengthConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+            }
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
