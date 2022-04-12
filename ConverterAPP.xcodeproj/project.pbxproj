@@ -15,6 +15,8 @@
 		0A29F06D28055AA2008A445D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A29F05A28055AA2008A445D /* Assets.xcassets */; };
 		0A29F07728057038008A445D /* LengthConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07628057038008A445D /* LengthConvertor.swift */; };
 		0A29F07828057039008A445D /* LengthConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07628057038008A445D /* LengthConvertor.swift */; };
+		0A29F07A28058557008A445D /* TimeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07928058557008A445D /* TimeConvertor.swift */; };
+		0A29F07B28058557008A445D /* TimeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07928058557008A445D /* TimeConvertor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		0A29F06528055AA2008A445D /* ConverterAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A29F06728055AA2008A445D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0A29F07628057038008A445D /* LengthConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConvertor.swift; sourceTree = "<group>"; };
+		0A29F07928058557008A445D /* TimeConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConvertor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				0A29F05928055AA0008A445D /* ContentView.swift */,
 				0A29F05A28055AA2008A445D /* Assets.xcassets */,
 				0A29F07628057038008A445D /* LengthConvertor.swift */,
+				0A29F07928058557008A445D /* TimeConvertor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,6 +187,7 @@
 				0A29F06A28055AA2008A445D /* ContentView.swift in Sources */,
 				0A29F07728057038008A445D /* LengthConvertor.swift in Sources */,
 				0A29F06828055AA2008A445D /* ConverterAPPApp.swift in Sources */,
+				0A29F07A28058557008A445D /* TimeConvertor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +198,7 @@
 				0A29F06B28055AA2008A445D /* ContentView.swift in Sources */,
 				0A29F07828057039008A445D /* LengthConvertor.swift in Sources */,
 				0A29F06928055AA2008A445D /* ConverterAPPApp.swift in Sources */,
+				0A29F07B28058557008A445D /* TimeConvertor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

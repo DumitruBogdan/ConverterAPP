@@ -31,7 +31,7 @@ func lengthConverter(inputType: String, inputValue: Double, outputType: String) 
     case "miles":
         aux = inputValue / 1609
     default:
-        aux = inputValue
+        aux = aux * 1
     }
     return aux
 }
