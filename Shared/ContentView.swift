@@ -28,13 +28,17 @@ struct ContentView: View {
                         }
                     }
                 }
-                HStack{
-                    TextField("The value is: ", value:$inputValue, format: .number)
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.decimalPad)
-                    TextField("The output is: ", value:$outputValue, format: .number)
-                        .multilineTextAlignment(.center)
-                        .disabled(true)
+                Section{
+                    HStack{
+                        TextField("The value is: ", value:$inputValue, format: .number)
+                            .multilineTextAlignment(.center)
+                            .keyboardType(.decimalPad)
+                        TextField("The output is: ", value:$outputValue, format: .number)
+                            .multilineTextAlignment(.center)
+                            .disabled(true)
+                    }
+                } header: {
+                    Text("Insert your value here")
                 }
                 
                 Section{
