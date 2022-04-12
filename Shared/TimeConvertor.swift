@@ -21,11 +21,11 @@ func timeConverter(inputType: String, inputValue: Double, outputType: String) ->
     }
     switch outputType{
     case "seconds":
-        aux = inputValue * 60
+        aux = aux * 60
     case "hours":
-        aux = inputValue / 60
+        aux = aux / 60
     case "days":
-        aux = inputValue / 1440
+        aux = aux / 1440
     default:
         aux = aux * 1
     }

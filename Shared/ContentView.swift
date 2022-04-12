@@ -87,17 +87,16 @@ struct ContentView: View {
         .onChange(of: self.inputValue) { newValue in
             switch unitSelected {
             case "Temperature":
-                // to do
-                outputValue = 10
+                outputValue = temperatureConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+                break
             case "Time":
                 outputValue = timeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
                 break
             case "Volume":
                 outputValue = volumeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
+                break
             default:
                 outputValue = lengthConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
-                
-                
             }
         }
     }

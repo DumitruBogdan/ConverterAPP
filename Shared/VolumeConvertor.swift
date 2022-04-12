@@ -23,13 +23,13 @@ func volumeConverter(inputType: String, inputValue: Double, outputType: String) 
     }
     switch outputType{
     case "mililiters":
-        aux = inputValue * 1000
+        aux = aux * 1000
     case "cups":
-        aux = inputValue * 4.167
+        aux = aux * 4.167
     case "pints":
-        aux = inputValue * 2.113
+        aux = aux * 2.113
     case "gallons":
-        aux = inputValue / 3.785
+        aux = aux / 3.785
     default:
         aux = aux * 1
     }

@@ -19,6 +19,8 @@
 		0A29F07B28058557008A445D /* TimeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07928058557008A445D /* TimeConvertor.swift */; };
 		0A29F07D28058BA7008A445D /* VolumeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07C28058BA7008A445D /* VolumeConvertor.swift */; };
 		0A29F07E28058BA7008A445D /* VolumeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07C28058BA7008A445D /* VolumeConvertor.swift */; };
+		0A29F08028058D55008A445D /* TemperatureConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07F28058D55008A445D /* TemperatureConvertor.swift */; };
+		0A29F08128058D55008A445D /* TemperatureConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F07F28058D55008A445D /* TemperatureConvertor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		0A29F07628057038008A445D /* LengthConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConvertor.swift; sourceTree = "<group>"; };
 		0A29F07928058557008A445D /* TimeConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConvertor.swift; sourceTree = "<group>"; };
 		0A29F07C28058BA7008A445D /* VolumeConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConvertor.swift; sourceTree = "<group>"; };
+		0A29F07F28058D55008A445D /* TemperatureConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConvertor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 				0A29F07628057038008A445D /* LengthConvertor.swift */,
 				0A29F07928058557008A445D /* TimeConvertor.swift */,
 				0A29F07C28058BA7008A445D /* VolumeConvertor.swift */,
+				0A29F07F28058D55008A445D /* TemperatureConvertor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -191,6 +195,7 @@
 				0A29F06A28055AA2008A445D /* ContentView.swift in Sources */,
 				0A29F07728057038008A445D /* LengthConvertor.swift in Sources */,
 				0A29F07D28058BA7008A445D /* VolumeConvertor.swift in Sources */,
+				0A29F08028058D55008A445D /* TemperatureConvertor.swift in Sources */,
 				0A29F06828055AA2008A445D /* ConverterAPPApp.swift in Sources */,
 				0A29F07A28058557008A445D /* TimeConvertor.swift in Sources */,
 			);
@@ -203,6 +208,7 @@
 				0A29F06B28055AA2008A445D /* ContentView.swift in Sources */,
 				0A29F07828057039008A445D /* LengthConvertor.swift in Sources */,
 				0A29F07E28058BA7008A445D /* VolumeConvertor.swift in Sources */,
+				0A29F08128058D55008A445D /* TemperatureConvertor.swift in Sources */,
 				0A29F06928055AA2008A445D /* ConverterAPPApp.swift in Sources */,
 				0A29F07B28058557008A445D /* TimeConvertor.swift in Sources */,
 			);

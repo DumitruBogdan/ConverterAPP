@@ -23,13 +23,13 @@ func lengthConverter(inputType: String, inputValue: Double, outputType: String) 
     }
     switch outputType{
     case "kilometers":
-        aux = inputValue / 1000
+        aux = aux / 1000
     case "feet":
-        aux = inputValue * 3.281
+        aux = aux * 3.281
     case "yards":
-        aux = inputValue * 1.094
+        aux = aux * 1.094
     case "miles":
-        aux = inputValue / 1609
+        aux = aux / 1609
     default:
         aux = aux * 1
     }
