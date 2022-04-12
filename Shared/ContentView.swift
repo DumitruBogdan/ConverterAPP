@@ -89,14 +89,11 @@ struct ContentView: View {
             case "Temperature":
                 // to do
                 outputValue = 10
-                
             case "Time":
                 outputValue = timeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
                 break
-                
             case "Volume":
-                //to do
-                outputValue = 10
+                outputValue = volumeConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
             default:
                 outputValue = lengthConverter(inputType: inputUnit, inputValue: newValue, outputType: outputUnit)
                 
